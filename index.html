@@ -117,11 +117,12 @@ const points2 = [
   {"id":74,"name":"姆明谷的森林","wing":0,"shrine":0,"ancestor":0},
   {"id":75,"name":"内心世界","wing":0,"shrine":0,"ancestor":0},
   {"id":76,"name":"群星影院","wing":0,"shrine":1,"ancestor":0},
-  {"id":77,"name":"市集","wing":0,"shrine":0,"ancestor":0},
+  {"id":77,"name":"市集","wing":0,"shrine":1,"ancestor":0},
   {"id":78,"name":"秘密基地（办公室）","wing":0,"shrine":1,"ancestor":0},
   {"id":79,"name":"秘密基地（任天堂）","wing":0,"shrine":0,"ancestor":0},
   {"id":80,"name":"冥想之地","wing":0,"shrine":0,"ancestor":0},
   {"id":81,"name":"咖啡店","wing":0,"shrine":0,"ancestor":0}
+  {"id":82,"name":"荒废神殿","wing":0,"shrine":0,"ancestor":0}
 ];
 const routes = [
   [1,[7,15,25,36,47,55,64]],
@@ -194,11 +195,12 @@ const routes = [
   [74,[]],
   [75,[]],
   [76,[77,70]],
-  [77,[]],
+  [77,[76,82]],
   [78,[55]],
   [79,[7,15,25,36,47,55,64]],
   [80,[2]],
-  [81,[2]]
+  [81,[2]],
+  [82,[77]]
 ];
 /* 合并 points */
 points.push(...points2);
